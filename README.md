@@ -1,8 +1,8 @@
-# Talk
+# Hconnect
 
 ## group video call app for the web. No signups. No downloads. Works in all major browsers.
 
-Talk is built using WebRTC, so all your video, audio & text chat is peer-to-peer. Group video call is achieved using WebRTC mesh. So the quality of the call is inversely proportional to the number of people on the call. The sweet number is somewhere around 6 to 8 people in an average high-speed connection.
+Hconnect is built using WebRTC, so all your video, audio & text chat is peer-to-peer. Group video call is achieved using WebRTC mesh. So the quality of the call is inversely proportional to the number of people on the call. The sweet number is somewhere around 6 to 8 people in an average high-speed connection.
 
 ---
 
@@ -31,7 +31,7 @@ Run the app
 npm start
 ```
 
-to start the talk server on port 3000. Your talk instance will be running on http://localhost:3000. Alternatively you can run the application using docker with `docker-compose up`.
+to start the Hconnect server on port 3000. Your talk instance will be running on http://localhost:3000. Alternatively you can run the application using docker with `docker-compose up`.
 
 ### LICENSE
 
