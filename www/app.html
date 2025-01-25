@@ -14,11 +14,11 @@
 			name="keywords"
 			content="group video chat, video communication, multiparty video chat, video chat, webrtc, peer to peer, p2p"
 		/>
-		<meta name="application-name" content="Talk" />
+		<meta name="application-name" content="Hconnect" />
 		<!-- Meta data for link fetching -->
 		<meta property="og:url" content="https://tlk.li" />
 		<meta property="og:image" content="https://tlk.li/og-image.png" />
-		<meta property="og:title" content="Talk - Free video calling for the web" />
+		<meta property="og:title" content="Hconnect - Free video calling for the web" />
 		<meta
 			property="og:description"
 			content="A free, peer-to-peer, encrypted, open-source video calling for the web. No sign ups. No downloads."
@@ -32,7 +32,7 @@
 		<script defer src="/vue.global.prod.js"></script>
 		<script defer src="app.js"></script>
 		<script defer src="webrtc.js"></script>
-		<title>Talk - Free video calling for the web</title>
+		<title>Hconnect - Free video calling for the web</title>
 		<!-- ANALYTICS_SCRIPT -->
 	</head>
 
@@ -44,7 +44,7 @@
 				<div id="intro" v-if="!callInitiated && !showChat && !showSettings">
 					<h3>Hconnect</h3>
 					<h3>You are about to enter a video call.</h3>
-					<p>Talk is a free, peer-to-peer, encrypted, open-source video calling for the web.</p>
+					<p>Hconnect is a free, peer-to-peer, encrypted, open-source video calling for the web.</p>
 					<p>
 						<label v-bind:class="(nameError && !name ? 'red' : '')">Please enter your name</label>
 						<input type="text" v-model="name" v-on:keyup="updateName" placeholder="Your name" />
