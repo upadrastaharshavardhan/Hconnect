@@ -1,5 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="Hconnect is a free, secure, and open-source platform for seamless group video calls. No sign-ups, no downloads, just connect instantly."
+    />
+    <meta
+      name="keywords"
+      content="video conferencing, group video chat, secure communication, peer-to-peer, free video call, instant video meetings"
+    />
+    <meta name="application-name" content="Hconnect" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:image" content="https://i.postimg.cc/4xsqKdsk/final-2-logo.png" />
+    <meta property="og:title" content="Hconnect - Free and Secure Group Video Calls" />
+    <meta
+      property="og:description"
+      content="Hconnect is a free, secure, and open-source platform for seamless group video calls. No sign-ups, no downloads, just connect instantly."
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/4xsqKdsk/final-2-logo.png" />
+    <link rel="icon" href="https://i.postimg.cc/4xsqKdsk/final-2-logo.png" />
+    <link rel="stylesheet" href="/home.css" />
+    <title>Hconnect - Free and Secure Group Video Calls</title>
+    <script defer src="/vue.global.prod.js"></script>
+    <script defer src="/home.js"></script>
+  </head>
+
+  <body>
+    <main class="wrap">
+      <div id="app" class="content-container">
+        <h1 class="header">
+          <img src="https://i.postimg.cc/4xsqKdsk/final-2-logo.png" alt="Hconnect Logo" class="logo" /> Hconnect
+        </h1>
+        <h2 class="subheader">Secure, peer-to-peer group video calls for seamless communication.</h2>
+        <h3 class="tagline">
+          No sign-ups. No downloads.<br />
+          Works on all major browsers with minimal setup.
+        </h3>
+        <div class="flex">
+          <div id="roomurl" class="room-url">
+            <span>Hconnect/</span>
+            <input
+              type="text"
+              placeholder="room-name"
+              pattern="[a-zA-Z0-9]{8}"
+              v-model="roomId"
+              v-on:keydown.enter="goToRoom"
+              class="room-input"
+            />
+          </div>
+          <a v-bind:href="'/'+roomId" class="button start-button">Start</a>
+        </div>
+
+        <p><a href="javascript:void(0)" v-on:click="generateRandomRoomId" class="random-room-link">Generate a random room</a></p>
+      </div>
+
+      <div class="footer">
+        <div class="footer-text">
+          &copy; Hconnect &middot; <a href="/legal">Legal</a> &middot;
+          <a href="mailto:upadrastaharsha08@gmail.com" target="_blank">Contact</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta
@@ -69,3 +148,4 @@
 		</main>
 	</body>
 </html>
+ -->
