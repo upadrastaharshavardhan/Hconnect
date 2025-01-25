@@ -1,89 +1,146 @@
+/* Global Styles */
 body {
-	color: #212121;
-	margin: 0;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-		"Helvetica Neue", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-size: 1.2rem;
-	line-height: 1.5;
+  color: #212121;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  background-color: #000; /* Black background for dark theme */
 }
+
+/* Link Styling */
 a {
-	color: inherit;
+  color: inherit;
 }
+
 a.button {
-	display: inline-block;
-	background: #212121;
-	color: #fff;
-	border: none;
-	border-radius: 0.2rem;
-	height: 3.2rem;
-	line-height: 3.2rem;
-	font-family: inherit;
-	font-size: 1.25rem;
-	font-weight: bold;
-	padding: 0px 1.5rem;
-	cursor: pointer;
-	text-decoration: none;
+  display: inline-block;
+  background: #d32f2f; /* Red background for buttons */
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0px 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
-label {
-	font-weight: bold;
+
+a.button:hover {
+  background-color: #c62828; /* Darker red on hover */
 }
+
+/* Layout & Spacing */
 .wrap {
-	width: 100%;
-	max-width: 640px;
-	margin: auto;
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
 }
+
 .flex {
-	display: flex;
+  display: flex;
 }
+
 .row {
-	padding: 0px 1rem;
-	margin: 1.25rem auto;
+  padding: 0px 1rem;
+  margin: 1.25rem auto;
 }
-.small {
-	font-size: 0.75em;
-}
-.title {
-	font-weight: bold;
-	font-size: 1.5rem;
-}
-.light {
-	color: #989898;
-}
+
 .spacer {
-	height: 5rem;
+  height: 5rem;
 }
+
+/* Header & Logo */
 #logo {
-	width: 3rem;
-	margin-right: 0.5rem;
+  width: 3rem;
+  margin-right: 0.5rem;
 }
+
+h1 {
+  color: #f44336; /* Red color for the header */
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: #bbb; /* Light gray for secondary text */
+  font-size: 1.2rem;
+}
+
+/* Room URL Input */
 #roomurl {
-	display: flex;
-	align-items: center;
-	border: 0.2rem solid #212121;
-	color: #212121;
-	font-family: inherit;
-	font-size: 1.25rem;
-	width: 100%;
-	height: 3.2rem;
-	max-width: 320px;
-	padding: 0px 1rem;
-	border-radius: 0.2rem;
-	box-sizing: border-box;
-	line-height: 2.7rem;
-	margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  border: 0.2rem solid #d32f2f; /* Red border */
+  color: #212121;
+  font-family: inherit;
+  font-size: 1.25rem;
+  width: 100%;
+  height: 3.2rem;
+  max-width: 320px;
+  padding: 0px 1rem;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  line-height: 2.7rem;
+  margin-right: 0.5rem;
+  background-color: #222; /* Dark background for the input field */
 }
+
 #roomurl > span {
-	color: #444;
-	font-weight: bold;
+  color: #f44336; /* Red color for the prefix */
+  font-weight: bold;
 }
+
 #roomurl input {
-	border: none;
-	background: none;
-	font: inherit;
-	outline: none;
+  border: none;
+  background: none;
+  font: inherit;
+  outline: none;
+  color: #fff; /* White text for the input */
 }
+
 #roomurl input::placeholder {
-	color: #888;
+  color: #888; /* Gray placeholder text */
+}
+
+/* Footer */
+footer {
+  color: #bbb; /* Light gray footer text */
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #f44336; /* Red color for footer links */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Small Text */
+.small {
+  font-size: 0.75em;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.light {
+  color: #989898;
 }
